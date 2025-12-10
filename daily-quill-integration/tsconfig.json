@@ -1,0 +1,10 @@
+{
+	"compilerOptions": {
+		"module": "CommonJS",
+		"moduleResolution": "Node",
+		"verbatimModuleSyntax": false,
+		"esModuleInterop": true,
+		"rootDir": "src",
+		"outDir": "dist"
+	}
+}
