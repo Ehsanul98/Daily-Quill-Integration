@@ -8,7 +8,7 @@ const PORT = process.env.PORT || 3000;
 app.use(express.json());
 app.use('/webhook', webhookRoutes);
 
-app.get('/', (req: Request, res: Response) => {
+app.get('/health', (req: Request, res: Response) => {
 	res.send('Daily Quill Integration is running!');
 });
 

@@ -8,3 +8,9 @@ export interface Taxonomy {
 	name: string;
 	values: TaxonomyValue[];
 }
+
+export interface Classification {
+	type: 'categories';
+	value: string;
+	taxonomy: string;
+}

@@ -13,7 +13,7 @@ describe('extractArticleId', () => {
 
 	it('throws on invalid URLs', () => {
 		expect(() => extractArticleId('https://site.com/no-id-here')).toThrow(
-			'Invalid URL format'
+			'Invalid URL: expected numeric article ID at end of "https://site.com/no-id-here"'
 		);
 	});
 });

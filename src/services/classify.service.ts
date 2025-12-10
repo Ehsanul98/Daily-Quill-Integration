@@ -1,7 +1,10 @@
 import { firestore } from './firestore.service';
 import extractArticleId from '../utils/extractArticleId';
+import { Classification } from '../types/webhook';
 
-export async function getClassifications(url: string) {
+export async function getClassifications(
+	url: string
+): Promise<Classification[]> {
 	const articleId = extractArticleId(url);
 
 	const doc = await firestore
